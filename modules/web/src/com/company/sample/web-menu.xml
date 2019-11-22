@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-sample"
+          insertBefore="administration">
+        <item screen="sample_Employee.browse"/>
+    </menu>
+    <menu id="application-standard"
+          icon="BELL"
+          insertAfter="application-sample">
+        <item id="userBrowser"
+              screen="sec$User.browse"/>
+        <item id="roleBrowser"
+              screen="sec$Role.browse"/>
+    </menu>
+    <item id="mySettings"
+          icon="GEAR"
+          screen="settings"/>
+    <item id="myHelp"
+          icon="QUESTION"
+          screen="aboutWindow"/>
+</menu-config>
